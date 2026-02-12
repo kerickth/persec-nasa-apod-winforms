@@ -265,7 +265,7 @@ namespace NasaApod_App
             panelAbout.Left = (this.ClientSize.Width - panelAbout.Width) / 2;
             panelAbout.Top = (this.ClientSize.Height - panelAbout.Height) / 2;
 
-            lblVersion.Text = $"Version: {Application.ProductVersion}";
+            lblVersion.Text = $"Version: {Application.ProductVersion.Split('+')[0]}";
             lb_About_developer.Text = "Kasidecha Kulkajornpanth";
             lb_About_title.Text = "NASA APOD Desktop Client";
         }

@@ -38,6 +38,7 @@
             label2 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            label8 = new Label();
             label3 = new Label();
             statusStrip1 = new StatusStrip();
             lb_rows = new ToolStripStatusLabel();
@@ -60,11 +61,11 @@
             // 
             // btnLoad
             // 
-            btnLoad.Location = new Point(301, 88);
+            btnLoad.Location = new Point(564, 101);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(94, 29);
             btnLoad.TabIndex = 0;
-            btnLoad.Text = "Send API";
+            btnLoad.Text = "Load APOD";
             btnLoad.UseVisualStyleBackColor = true;
             btnLoad.Click += btnLoad_Click;
             // 
@@ -72,7 +73,7 @@
             // 
             cboYear.Font = new Font("Segoe UI", 10.2F);
             cboYear.FormattingEnabled = true;
-            cboYear.Location = new Point(126, 46);
+            cboYear.Location = new Point(73, 99);
             cboYear.Name = "cboYear";
             cboYear.Size = new Size(151, 31);
             cboYear.TabIndex = 1;
@@ -82,7 +83,7 @@
             // 
             cboMonth.Font = new Font("Segoe UI", 10.2F);
             cboMonth.FormattingEnabled = true;
-            cboMonth.Location = new Point(126, 87);
+            cboMonth.Location = new Point(320, 99);
             cboMonth.Name = "cboMonth";
             cboMonth.Size = new Size(151, 31);
             cboMonth.TabIndex = 2;
@@ -112,7 +113,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label1.Location = new Point(48, 54);
+            label1.Location = new Point(18, 107);
             label1.Name = "label1";
             label1.Size = new Size(49, 23);
             label1.TabIndex = 4;
@@ -122,7 +123,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            label2.Location = new Point(48, 95);
+            label2.Location = new Point(246, 107);
             label2.Name = "label2";
             label2.Size = new Size(68, 23);
             label2.TabIndex = 5;
@@ -141,6 +142,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(label8);
             tabPage1.Controls.Add(label3);
             tabPage1.Controls.Add(statusStrip1);
             tabPage1.Controls.Add(label1);
@@ -157,11 +159,22 @@
             tabPage1.Text = "Main";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.GrayText;
+            label8.Location = new Point(27, 57);
+            label8.Name = "label8";
+            label8.Size = new Size(264, 20);
+            label8.TabIndex = 8;
+            label8.Text = "NASA Astronomy Picture of the Day";
+            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(18, 5);
+            label3.Location = new Point(18, 15);
             label3.Name = "label3";
             label3.Size = new Size(259, 38);
             label3.TabIndex = 7;
@@ -339,5 +352,6 @@
         private Label label4;
         private Label lb_About_developer;
         private Label lb_About_title;
+        private Label label8;
     }
 }
