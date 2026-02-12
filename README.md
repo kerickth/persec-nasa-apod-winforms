@@ -15,7 +15,7 @@ Astronomy Picture of the Day (APOD) API.
 ## Demo
 ### Video Demo
 Watch the demo here:
-https://youtu.be/puAyfp-Sjbw
+https://youtu.be/G9J8PSWZMVI
 
 ### Download Demo
 Download the latest executable from:
